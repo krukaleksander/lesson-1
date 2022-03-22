@@ -1,0 +1,9 @@
+4 bitowe komputery 
+
+przyjmowały max 1111 czyli od 0 15
+
+jeśli do największego integera dodamy 1 otrzymamy najmniejszy i odwrotnie per analogia
+
+w js max jest na 64 bitach
+
+zobacz jak sprawdzić integer overflow bez wywoływannia Number.Max
