@@ -16,8 +16,12 @@ describe("number", function () {
     expect(() => tn.divide(0)).toThrow("cannot divide by 0");
   });
 
-  it("subtract out of range", () => {
-    const tn = new TN(Number.MIN_SAFE_INTEGER);
-    expect(() => tn.subtract(1)).toThrow("number out of range");
+  // it("subtract out of range", () => {
+  //   const tn = new TN(Number.MIN_SAFE_INTEGER);
+  //   expect(() => tn.subtract(1)).toThrow("number out of range");
+  // });
+  it("return -4", () => {
+    const value = new TN(17).subtract(5).divide(-3).result();
+    expect(value).toBe(-4);
   });
 });
