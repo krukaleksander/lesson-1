@@ -7,3 +7,8 @@ jeśli do największego integera dodamy 1 otrzymamy najmniejszy i odwrotnie per 
 w js max jest na 64 bitach
 
 zobacz jak sprawdzić integer overflow bez wywoływannia Number.Max
+
+beforeAll - przed wszystkimi
+afterAll - po wszyztkich
+Each - po każdej
+beforeEach

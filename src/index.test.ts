@@ -1,18 +1,19 @@
 import { TurboNumber as TN } from "./index";
 
+let tn: TN;
+
+beforeEach(() => (tn = new TN(10)));
+
 describe("number", function () {
   it("division", () => {
-    const tn = new TN(10);
     tn.divide(5);
     expect(tn.result()).toBe(2);
   });
   it("subtract", () => {
-    const tn = new TN(10);
     tn.subtract(5);
     expect(tn.result()).toBe(5);
   });
   it("division by 0", () => {
-    const tn = new TN(10);
     expect(() => tn.divide(0)).toThrow("cannot divide by 0");
   });
 
@@ -22,6 +23,7 @@ describe("number", function () {
   // });
   it("return -4", () => {
     const value = new TN(17).subtract(5).divide(-3).result();
+
     expect(value).toBe(-4);
   });
 });
